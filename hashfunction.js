@@ -11,29 +11,29 @@ let hash_value = "Crypto plays a heart role in blockchain!";
  * Input: a string of arbitrary length
  * Output: 256-bit string
  */
-function sha256_hash(str) {
-    return bytesToHex(sha256(utf8ToBytes(str)));
+async function sha256_hash(str) {
+    return bytesToHex(await sha256(utf8ToBytes(str)));
 }
 /** 
  * Input: a string of arbitrary length
  * Output: 256-bit string
  */
-function keccak_hash(str) {
-    return bytesToHex(keccak256(utf8ToBytes(str)));
+async function keccak_hash(str) {
+    return bytesToHex(await keccak256(utf8ToBytes(str)));
 }
 /** 
  * Input: a string of arbitrary length
  * Output: 160-bit string
  */
-function ripemd160_hash(str) {
-    return bytesToHex(ripemd160(utf8ToBytes(str)));
+async function ripemd160_hash(str) {
+    return bytesToHex(await ripemd160(utf8ToBytes(str)));
 }
 /** 
  * Input: a string of arbitrary length
  * Output: 512-bit string
  */
-function blake2b_hash(str) {
-    return bytesToHex(blake2b(utf8ToBytes(str)));
+async function blake2b_hash(str) {
+    return bytesToHex(await blake2b(utf8ToBytes(str)));
 }
 
 console.log("Using SHA256 => ", sha256_hash(hash_value));
