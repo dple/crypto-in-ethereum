@@ -47,6 +47,7 @@ getScrypt(pass, salt, 1024, 1, 8, keylen);
  */
 async function getCSPRN(_keylen) {
     console.log("Key derived from CSPRN =>:", bytesToHex( await getRandomBytes(_keylen)));
+    console.log(getRandomBytes(48));
 }
 
 getCSPRN(keylen);

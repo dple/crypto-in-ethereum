@@ -1,5 +1,5 @@
 const { sha256 } = require("ethereum-cryptography/sha256");
-const { keccak256 } = require("ethereum-cryptography/keccak");
+const { keccak256 } = require("ethereum-cryptography/keccak256");
 const { ripemd160 } = require("ethereum-cryptography/ripemd160"); 
 const { blake2b } = require("ethereum-cryptography/blake2b");
 const { utf8ToBytes } = require("ethereum-cryptography/utils");
